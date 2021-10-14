@@ -1,0 +1,677 @@
+*,
+*::after,
+*::before{
+  box-sizing: border-box; 
+     
+} 
+html{
+    scroll-behavior: smooth; 
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+body{
+    /* font-family: 'PT Serif', serif; */
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #1F1E1E;
+}
+ul{
+    list-style: none;
+}
+
+.container {
+    max-width: 1140px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+}
+
+.title{
+    text-align: center;
+    font-size: 36px;
+    line-height: 130%;
+    font-weight: 500;
+}
+
+
+
+.header {
+    background-image: url(../images/header/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+.header__inner {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header__top {
+    padding: 16px 0 49px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header__phone {
+    font-size: 16px;
+    line-height: 130%;
+    font-weight: 700;
+    color: #fff;
+}
+
+.header__phone-number {
+    margin-left: 19px;
+    font-weight: 400;
+    padding: 12px 31px 13px;
+    border-radius: 22px;
+    background-color:  #886239;
+}
+
+.menu {
+    width: 100%;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    margin-top: 15px;
+    padding: 27px 0 24px;
+}
+
+.menu__list {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    font-size: 16px;
+    color: #fff;
+}
+
+.header__title {
+    font-family: 'PT Serif', serif;
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 130%;
+    text-align: center;
+    margin-bottom: auto;
+}
+
+.header__descr {
+    font-size: 20px;
+    font-weight: 700;
+    max-width: 422px;
+    margin-bottom: 20px;
+}
+.header__btn {
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    padding: 19px 55px 20px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    background-color:  #886239;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.header__arrow {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* DIRECTION */
+.direction {
+    padding: 100px 0;
+}
+
+.direction__inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 32px;
+}
+
+.direction__img {
+    display: block;
+}
+
+.direction__text {
+    padding: 10px 19px 14px;
+    font-size: 16px;
+    border: 1px solid #D9D9DE;
+    border-top: none;
+}
+
+
+
+/* TREVEL INFO */
+
+.travel__info {
+    padding: 30px 0 50px;
+    background-image: url('../images/directions-icon/trevel-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.travel__info-title {
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+.travel__info-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 54px 67px;
+    /* gap: 54px 57px; */
+    
+}
+
+.travel__info-item {
+}
+.travel__info-img {
+    margin-bottom: 15px;
+}
+.travel__info-text {
+    color: #fff;
+    font-size: 16px;
+    line-height: 130%;
+}
+
+
+
+/* POPULAR */
+.popular {
+    padding: 100px 0;
+}
+
+.popular__title {
+   margin-bottom: 40px;
+}
+
+.popular__items {
+    padding-bottom: 80px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 32px;
+    border-bottom: 1px solid #D9D9D3;
+}
+
+.popular__link {
+    padding: 16px 24px 19px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 256px;
+    line-height: 130%;
+}
+
+.popular__link:nth-child(3),
+.popular__link:nth-child(6){
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.popular__link-title {
+    font-weight: 500;
+   margin-bottom: 15px;
+}
+
+.popular__link-title--big{
+    font-size: 24px;
+    line-height: 130%;
+}
+
+.popular__price {
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: auto;
+}
+.popular__country,
+.popular__time {
+    margin-bottom: 15px;
+}
+ .map{
+     padding-bottom: 100px;
+ }
+
+ .map__title{
+     margin-bottom: 46px;
+ }
+
+ 
+
+
+
+
+ /* ABOUT */
+ .about {
+     padding-bottom: 100px;
+}
+
+.about__inner {
+    display: grid;
+    grid-template-columns: 448px 640px;
+    grid-gap: 32px;
+}
+
+.about__title {
+    margin-bottom: 25px;
+    text-align: left;
+}
+.title {
+}
+.about__text {
+    margin-bottom: 34px;
+}
+.about__link {
+    font-size: 16px;
+    line-height: 19px;
+    color: #c4c4c4;
+    text-decoration: underline;
+}
+.about__popup {
+    background-image: url(../images/gallery/video.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* GALLERY */
+.gallery {
+    padding: 50px 0 105px;
+    background-color: #886239;
+    color: #fff;
+}
+
+.gallery__top {
+    margin-bottom: 40px;
+    padding-right: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gallery__link {
+    text-decoration: underline;
+}
+
+.gallery__item-inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 32px;
+}
+
+.slick-btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: -85px;
+    right: 0;
+}
+
+.slick-prev{
+    right: 60px;
+}
+
+
+/* TOUR */
+.tour{
+    padding: 100px 0;
+}
+
+.tour__title {
+    margin-bottom: 77px;
+}
+.tour__box{
+    column-count: 2;
+    column-gap: 46px;
+    padding-bottom: 50px;
+    margin-bottom: 44px;
+    border-bottom: 1px solid #d9d9de;
+}
+
+.tour__text {
+    margin-bottom: 15px;
+}
+
+.tour__text span{
+    font-weight: 700;
+}
+
+.tour__info {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 70px;
+}
+
+.tour__info-item {
+    font-size: 58px;
+    line-height: 60px;
+    color: #886239;
+    font-weight: 700;
+    font-family:  'PT Serif', serif;;
+    text-align: center;
+}
+.tour__info-text {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    color: #1f1e1e;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+/* BOOKING */
+.booking {
+    padding: 75px 0;
+    background-color: #eaeaea;
+}
+
+.booking__title {
+    margin-bottom: 43px;
+}
+
+.booking__form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 830px;
+    margin: 0 auto;
+}
+
+.booking__input {
+    margin-bottom: 28px;
+    padding: 11px 14px 12px;
+    width: 256px;
+    height: 44px;
+    border: 1px solid #dedede;
+    font-size: 16px;
+}
+
+
+.booking__input::placeholder,
+.booking_area::placeholder{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #c4c4c4;
+}
+
+.booking_area {
+    margin-bottom: 67px;
+    width: 100%;
+    height: 112px;
+    padding: 14px;
+    resize: none;
+    border: 1px solid #dedede;
+}
+
+.booking__btn {
+    padding: 19px 65px 20px;
+    border-radius: 30px;
+    border: none;
+    background-color: #886239;
+    color: #fff;
+    line-height: 21px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.booking__label {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 130%;
+    text-decoration: underline;
+}
+
+.booking__checkbox {
+    padding-left: 45px;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+.booking__checkbox-style{
+    margin-left: -45px;
+    width: 26px;
+    height: 26px;
+    border-radius: 2px;
+    border: 2px solid #c4c4c4;
+    position: absolute;
+}
+
+.booking__checkbox:checked + .booking__checkbox-style::before{
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background-color: #c4c4c4;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+/* FOOTER */
+.footer{
+    background-color: #1F1E1E;;
+    padding: 80px 0;
+}
+
+.footer__logo {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.footer__box {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 14px;
+    line-height: 130%;
+    max-width: 830px;
+    margin: 0 auto;
+
+}
+.footer__info {
+    width: 225px;
+}
+
+.footer__box-title {
+    margin-bottom: 7px;
+    font-weight: 500;
+}
+.footer__copy {
+    opacity: 0.8;
+    margin-bottom: 3px;
+}
+
+.footer__link {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+.footer__address {
+    width: 165px;
+}
+
+.footer__address-text,
+.footer__phone {
+    opacity: 0.8;
+}
+
+.footer__contacts {
+    width: 210px;
+    opacity: 0.8;
+}
+
+.footer__mail {
+    opacity: 0.8;
+    display: block;
+}
+  
+
+
+
+
+
+/* Модалка */
+.fade-block {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+     background-color:rgba(228, 221, 215,0.69);
+     z-index: 9;
+} 
+
+.modal-window {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content-hidden {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+[data-name], [data-tab] {
+    cursor: pointer;
+}
+
+.card-header{
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 30px;
+}
+.booking__input.booking__input-modal{
+    width: 100%;
+    /* border-radius: 30px; */
+    height: 60px;
+    background-color:rgb(136, 98, 57);
+    color: #fff;
+    outline: none;
+}
+
+.booking_area.booking_area-modal{
+    background-color:rgb(136, 98, 57);
+    color: #fff;
+    outline: none;
+}
+.card{
+    max-width: 400px;
+}
+
+.btn-dark{
+    padding: 15px 30px;
+    background-color:rgb(136, 98, 57);
+    border: none;
+    color: #fff;
+}
+.booking__btn.booking__btn-modal{
+    margin-bottom: 30px;
+    padding: 15px 65px 15px;
+   
+}
+.booking__label-modal{
+    display: none;
+}
+
+
+/* NAVIGATION MENU */
+.nav-icon{
+    width: 30px;
+    height: 25px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+.nav-icon__middle {
+    position: relative;
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+    z-index: 2;
+  }
+
+.nav-icon__middle::after,
+.nav-icon__middle::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+}
+
+.nav-icon__middle::after {
+    top: -10px;
+  }
+  
+.nav-icon__middle::before {
+    top: 10px;
+}
+
+.nav-icon.nav-icon--active {
+    position: fixed;
+    right: 13px;
+    top: 114px;
+    z-index: 5;
+  }
+
+.nav-icon.nav-icon--active .nav-icon__middle {
+background-color: transparent;
+}
+.nav-icon.nav-icon--active .nav-icon__middle::after,
+.nav-icon.nav-icon--active .nav-icon__middle::before {
+top: 0;
+transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+background-color: #fff;
+}
+
+.nav-icon.nav-icon--active .nav-icon__middle::after {
+transform: rotate(-45deg);
+}
+
+.nav-icon.nav-icon--active .nav-icon__middle::before {
+transform: rotate(45deg);
+}
+   
+
+

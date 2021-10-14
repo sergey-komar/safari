@@ -1,0 +1,278 @@
+
+
+   
+
+
+@media (max-width: 1200px){
+.header__phone span{
+  display: none;
+}
+}
+
+
+@media (max-width: 1140px){
+  .direction__inner{
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  .direction__img{
+    width: 100%;
+  }
+  .about__inner{
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px;
+  }
+  .gallery__item-inner{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .gallery__item-img{
+    width: 100%;
+  }
+}
+
+
+
+@media (max-width: 990px){
+  .popular__link{
+    min-height: 200px;
+  }
+  .popular__items{
+    grid-gap: 10px;
+  }
+  .popular__link:nth-child(3),
+  .popular__link:nth-child(6){
+    grid-column: auto;
+    grid-row: auto;
+}
+  .popular__items{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .popular__link{
+    min-height: 320px;
+  }
+  .popular{
+    padding: 50px 0;
+  }
+  .tour__info{
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px 30px;
+  }
+}
+
+
+@media (max-width: 850px){
+  .travel__info-items{
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+  }
+  .map{
+    padding-bottom: 50px;
+  }
+  .map__iframe{
+     height: 400px;
+  }
+  .about__inner{
+    grid-template-columns: 1fr ;
+    grid-gap: 20px;
+  }
+  .about__popup{
+    min-height: 400px;
+  }
+  .gallery{
+    padding-bottom: 50px;
+  }
+  .tour{
+    padding: 50px 0;
+  }
+  .tour__box{
+    column-count: 1;
+  }
+  .tour__title{
+    margin-bottom: 40px;
+  }
+  .tour__info{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .booking{
+    padding: 50px 0;
+  }
+  .booking__input{
+    width: 100%;
+  }
+  .booking__label{
+    margin-top: -190px;
+    margin-left: 50px;
+    width: 100%;
+  }
+  .footer{
+    padding: 50px 0;
+  }
+  .footer__logo{
+    margin-bottom: 40px;
+  }
+  .footer__box{
+    display: block;
+    text-align: center;
+  }
+  .footer__info,
+  .footer__address{
+    margin: 0 auto 25px;
+  }
+  .footer__contacts{
+    margin: 0 auto;
+  }
+}
+
+
+
+
+@media (max-width: 560px){
+  
+/* MENU */
+  .nav-icon{
+    display: flex;
+    margin-left: auto;
+    position: relative;
+    top: -68px;
+}
+
+.menu__list{
+    position: fixed;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #886239;
+    opacity: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s ease-in, top 0s linear 0.2s;
+}
+
+.menu__list.nav--active {
+    top: 0;
+    opacity: 1;
+    transition: top 0s linear, opacity 0.2s ease-in;
+  }
+.menu__link{
+font-size: 28px;
+color: #fff;
+}  
+.menu__item{
+margin-top:  50px;
+}   
+/* MENU */
+
+
+
+.header__title{
+  font-size: 50px;
+ color:#fff;
+ line-height: 120%;
+ margin-bottom: 60px;
+}
+
+.logo{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.header__phone-number{
+  margin-left: 0;
+}
+.menu{
+  border-bottom: none;
+  border-top: none;
+}
+.header__descr{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.direction__inner{
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+.direction{
+  padding: 50px 0;
+}
+.travel__info-items{
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+.travel__info-text{
+  text-align: center;
+}
+.travel__info-item{
+  align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.title{
+  font-size: 28px;
+}
+
+.popular__items{
+  grid-template-columns: repeat(1, 1fr);
+}
+.popular__link-title--big{
+  font-size: 18px;
+}
+.popular__items{
+  border-bottom: none;
+} 
+.gallery__item-inner{
+  grid-template-columns: repeat(1, 1fr);
+}
+
+}
+
+
+
+
+@media (max-width: 460px){
+  .direction__inner{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .header__btn{
+    padding: 15px 35px 15px;
+  } 
+  .map{
+    margin-top: -50px;
+  }
+  .about__popup{
+    min-height: 300px;
+  }
+  .gallery__link{
+    display: none;
+  }
+  .tour__info{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .tour__info-item{
+    font-size: 48px;
+  }
+  .tour__info-text{
+    font-size: 18px;
+  }
+  .tour__text,
+  .about__text,
+  .popular__link-title{
+    font-size: 16px;
+  }
+  .popular__country{
+    font-size: 15px;
+  }
+  .travel__info-text{
+    font-size: 14px;
+  }
+
+  .booking__input.booking__input-modal{
+    height:   auto;
+  }
+}
+
